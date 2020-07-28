@@ -16,7 +16,7 @@ namespace Commander.Repository
 
         public void CreateCommand(Command command)
         {
-            if(command != null)
+            if(command == null)
             {
                 throw new ArgumentNullException(nameof(command));
             }
